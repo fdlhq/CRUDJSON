@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">
+        JSON CRUD (Update)
+      </h1>
+      <form action="" method="post">
+        <input
+          type="text"
+          name="name"
+          placeholder="Insert your name"
+          value="<%= item.name %>"
+          required
+        />
+        <input
+          type="number"
+          name="height"
+          placeholder="Insert your height"
+          value="<%= item.height %>"
+        />
+        <input
+          type="number"
+          step="0.01"
+          name="weight"
+          placeholder="Insert your weight"
+          value="<%= item.weight %>"
+        />
+        <input type="date" name="birthdate" value="<%= item.birthdate %>" />
+        <select type="text" name="married" value="<%= item.married %>">
+          <option disabled>Have you married?</option>
+          <option value="true" <%= item.married ? ' selected' : '' %>>True</option>
+          <option value="false" <%= !item.married ? ' selected' : '' %>>False</option>
+        </select>
+        <button type="submit">Save</button>
+        <a href="/" class="btn">Cancel</a>
+      </form>
+    </div>
+  </body>
+</html>

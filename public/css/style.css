@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #a18cd1;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
+  }
+  
+  tr:nth-child(odd) {
+
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+
+  form {
+    border:#f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=number], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif
+  }
+
+  .btn {
+    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif
+  }
+
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 0;
+  }
